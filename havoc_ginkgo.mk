@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 ArrowOS
+# Copyright (C) 2020 Havoc-OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,24 +17,22 @@
 # Inherit framework first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common ArrowOS stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Havoc-OS stuff
+TARGET_INCLUDE_WIFI_EXT := true
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := arrow_ginkgo
+PRODUCT_NAME := havoc_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-DEVICE_MAINTAINER := Adithya R
 
 # Fingerprint
 BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys

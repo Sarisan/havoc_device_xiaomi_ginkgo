@@ -9,13 +9,13 @@
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
-    NotchBarKiller
 
 # Audio
 PRODUCT_COPY_FILES += \
