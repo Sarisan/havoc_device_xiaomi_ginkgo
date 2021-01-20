@@ -24,6 +24,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common Havoc-OS stuff
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier
