@@ -71,18 +71,4 @@
     <string name="clear_speaker_title">Làm sạch loa</string>
     <string name="clear_speaker_summary">Phát âm thanh 30s để làm sạch loa</string>
     <string name="clear_speaker_description">Bật tùy chọn này 1-2 lần nếu loa hơi bẩn. Đồng thời đặt âm lượng ở mức tối đa.\n\nNếu loa quá bẩn, hãy chạy tùy chọn này 2-5 lần và lắc điện thoại.Điện thoại nên hướng xuống</string>
-	
-<!-- Kcal settings -->
-    <string name="kcal_settings_title">Hiệu chỉnh màu màn hình</string>
-    <string name="kcal_settings_summary">Chỉnh sửa màu màn hình của bạn bằng KCAL</string>
-    <string name="kcal_enable_title">Cấu hình màu màn hình</string>
-    <string name="kcal_enable_summary">Kích hoạt bao gồm cài đặt màu màn hình để chỉnh sửa nó</string>
-    <string name="red_slider_title">Màu Đỏ</string>
-    <string name="green_slider_title">Màu xanh lá</string>
-    <string name="blue_slider_title">Màu xanh da trời</string>    
-    <string name="kcal_calibration_preference_category_title">Hiệu chỉnh màu</string>
-    <string name="saturation_slider_title">Độ bão hòa</string>
-    <string name="reset_default_button_title">Khôi phuc cài đặt</string>
-    <string name="reset_default_button_summary">Khôi phục tất cả cài đặt KCAL</string>
-    <string name="contrast_slider_title">Độ tương phản</string>
 </resources>

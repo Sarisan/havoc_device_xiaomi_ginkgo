@@ -20,7 +20,6 @@
     <string name="device_settings_title">Xiaomi Parts</string>
     <string name="device_settings_summary">Dodatkowe ustawienia</string>
     <string name="audio_title">Dźwięk</string>
-    <string name="display_title">Wyświetlacz</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Ulepszanie dźwięku Mi</string>
@@ -69,19 +68,4 @@
     <string name="clear_speaker_title">Wyczyść głośnik</string>
     <string name="clear_speaker_summary">Odtwarza 30-sekundowy dźwięk, aby wyczyścić głośnik</string>
     <string name="clear_speaker_description">Uruchom to narzędzie raz lub dwa razy, jeśli Twój głośnik jest zablokowany przez kurz bądź pył. Ustaw maksymalną głośność.\n\nJeśli głośnik jest zablokowany mocniej, uruchom to narzędzie od 2 do 5 razy, potrząsając urządzeniem z głośnikiem skierowanym w dół.</string>
-
-    <!-- Kcal settings -->
-    <string name="kcal_settings_title">Kalibracja kolorów wyświetlacza</string>
-    <string name="kcal_settings_summary">Dostosuj kolory wyświetlacza za pomocą KCAL</string>
-    <string name="kcal_enable_title">Włącz konfigurację kolorów wyświetlacza</string>
-    <string name="kcal_enable_summary">Umożliwia konfigurację kolorów wyświetlacza w celu dostosowania niestandardowego</string>
-    <string name="red_slider_title">Czerwony</string>
-    <string name="green_slider_title">Zielony</string>
-    <string name="blue_slider_title">Niebieski</string>    
-    <string name="kcal_rgb_preference_category_title">RGB</string>
-    <string name="kcal_calibration_preference_category_title">Kalibracja kolorów</string>
-    <string name="saturation_slider_title">Saturacja</string>
-    <string name="reset_default_button_title">Przywróć domyślną konfigurację</string>
-    <string name="reset_default_button_summary">Przywróć wszystkie konfiguracje tego ekranu</string>
-    <string name="contrast_slider_title">Kontrast</string>
 </resources>
