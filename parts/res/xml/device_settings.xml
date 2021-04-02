@@ -55,4 +55,5 @@
                 android:targetPackage="org.lineageos.settings.speaker" />
         </Preference>
     </PreferenceCategory>
+
 </PreferenceScreen>

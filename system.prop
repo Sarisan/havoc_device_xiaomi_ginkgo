@@ -39,6 +39,10 @@ persist.vendor.ims.disableQXDMLogs=1
 # Incremental FS
 ro.incremental.enable=1
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # NFC
 ro.se.type=HCE,UICC
 
@@ -66,6 +70,11 @@ ro.build.shutdown_timeout=2
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true

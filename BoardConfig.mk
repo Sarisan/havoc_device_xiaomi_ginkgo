@@ -38,7 +38,7 @@ TRINKET := trinket
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Audio
-AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
+AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -76,14 +76,12 @@ endif
 endif
 
 # Display
-TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_GRALLOC4 := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -116,7 +114,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=16 androidboot.init_fatal_reboot_target=recovery cgroup.memory=nokmem,nosocket
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 cgroup.memory=nokmem,nosocket
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -191,10 +191,6 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2 --set_hashtree_disabled_flag
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    system/lib/libcameraservice.so|libmedia_jni_shim.so
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2021-02-01

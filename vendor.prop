@@ -81,11 +81,13 @@ dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.dex2oat-filter=everything
+dalvik.vm.dex2oat-minidebuginfo=false
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-filter=everything
 dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.minidebuginfo=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
@@ -142,6 +144,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Data
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
+ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
 # Display
@@ -172,7 +175,6 @@ vendor.display.enable_default_color_mode=1
 vendor.display.enable_force_split=0
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
-vendor.display.idle_time=1200
 #vendor.display.svi.config=1
 #vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.gralloc.disable_ubwc=0

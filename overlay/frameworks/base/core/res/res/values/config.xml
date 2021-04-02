@@ -37,12 +37,13 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -140 0
-        C -100 0 -82 4 -56 47
-        C -44 67 -23 80 0 80
-        C 23 80 44 67 56 47
-        C 82 4 100 0 140 0
-        L -140 0
+        M -145 0
+        C -100 0 -87 4 -61 47
+        C -49 67 -28 80 0 80
+        C 28 80 49 67 61 47
+        C 87 4 100 0 145 0
+        L 145 -1
+        L -145 -1
         Z
     </string>
 
@@ -551,18 +552,6 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Average Current for bluetooth controller when idle. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_idle_cur_ma">3</integer>
-
-    <!-- Average Current for bluetooth controller when receiving. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_rx_cur_ma">20</integer>
-
-    <!-- Average Current for bluetooth controller when transmitting. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_tx_cur_ma">33</integer>
-
-    <!-- Operating volatage for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
-
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/bin/surfaceflinger"</item>
@@ -743,4 +732,7 @@
     
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
+
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
 </resources>
